@@ -3,22 +3,13 @@ import logo from "../../img/logo.jpg";
 import {motion, AnimatePresence} from "framer-motion";
 
 
+
 const Navbar = () => {
   const [openLink, openLinkToggle] = useState (false);
 
   const handleNavLinksToggle = () => {
     openLinkToggle (!openLink);
   }
-
-  // const renderClasses = () =>{
-  //   let classes = "navLinks";
-
-  //   if (openLink) {
-  //     classes += " active"
-  //   }
-
-  //   return classes
-  // }
 
   const item={
     exit:{
@@ -33,6 +24,8 @@ const Navbar = () => {
   }
 
   return (
+
+    
     <>
       <nav className="navbar">
         <div className="navbar__logo">
@@ -105,15 +98,12 @@ const Navbar = () => {
                  }} href="#">APERITIVOS</motion.a>
 
         </motion.div>
-
-          
         }
-        
         </AnimatePresence>
         
         <div className="hamburger-toggler" onClick={handleNavLinksToggle}>
-        <i class="fa-solid fa-bars"></i>
-        </div>
+        <i class="fa-solid fa-bars" style={{color:"white"}}></i>
+        </div> 
       </nav>
     </>
   );

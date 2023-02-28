@@ -38,6 +38,7 @@
     }
   }
   .menu_container{
+    top:0;
     position:absolute;
     width:100%;
     height:100%;
@@ -56,9 +57,6 @@
         font-size:22px;
       }
       text-transform: uppercase;
-      +a{
-        margin-top:1vw;
-      }
     }
   
     .btn_close{
@@ -79,18 +77,30 @@
     } 
     .navbar{
       display: flex;
-      justify-content: center;
-      flex-direction: row;
-      background-color: black;
+      justify-content: flex-end;
       position: relative;
+      height: 7vh;
+      background-color: black;
+      align-items: center;
       &__logo{ 
+        position: absolute;
         height: 100%;
         width: 100%;
         display: flex;
+        align-items:center ;
         justify-content: center;
         z-index: 5;
         img{
-          height: 90%;
-          width:5%;
-      }} 
-  }
+            height: 90%;
+            width: 15%;
+          } 
+        }
+        
+      }  
+      .hamburger-toggler{
+        position: relative;
+        z-index: 5;
+        margin-right: 5%;
+      }
+
+      
