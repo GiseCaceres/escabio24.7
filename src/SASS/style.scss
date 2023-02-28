@@ -53,3 +53,6 @@
     }
   }
 }
+
+@media screen and (max-width:850px){
+  @import "../components/Navbar/Style/index.scss";  }
