@@ -1,14 +1,12 @@
 import React from "react";
 // import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import './CSS/style.css';
-import './CSS/index.css';
+import "./CSS/style.css";
 
 function App() {
   return (
     <div>
-  
-      <Navbar/>
+      <Navbar />
       {/* <Footer/> */}
     </div>
   );
