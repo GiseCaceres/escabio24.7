@@ -5,7 +5,14 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   user-select: none;
 }
-
+.content {
+  display: flex;
+  justify-content: center;
+  margin: 5%;
+  &__h1 {
+    color: #2f3d40;
+  }
+}
 .aside {
   margin: 0% 2%;
   display: flex;
@@ -62,5 +69,6 @@
   @import "../components/Navbar/Style/indexMobile.scss";
 }
 @media screen and (min-width: 851px) {
+  @import "../components/Main/Style/index.scss";
   @import "../components/Navbar/Style/indexDesktop.scss";
 }

@@ -64,6 +64,7 @@ header {
   display: flex;
   justify-content: flex-end;
   position: relative;
+  z-index: 15;
   height: 7vh;
   background-color: black;
   align-items: center; }
